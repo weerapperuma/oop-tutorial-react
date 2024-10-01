@@ -1,0 +1,88 @@
+/* Basic container setup */
+.tutorial-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Sidebar (tutorial-toc) */
+  .tutorial-toc {
+    width: 25%;
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  .tutorial-toc h1 {
+    font-size: 24px;
+  }
+  
+  .tutorial-toc ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .tutorial-toc ul li {
+    margin: 10px 0;
+  }
+  
+  .tutorial-toc ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+  }
+  
+  .tutorial-toc ul li a:hover {
+    color: #007BFF;
+  }
+  
+  /* Content section (tutorial-content) */
+  .tutorial-content {
+    width: 70%;
+    padding: 20px;
+  }
+  
+  .tutorial-content h2 {
+    font-size: 28px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .tutorial-container {
+      display: block;
+    }
+  
+    .tutorial-toc {
+      display: none;
+    }
+  
+    .tutorial-toc.mobile-active {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #f1f1f1;
+      z-index: 10;
+    }
+  
+    .tutorial-content {
+      width: 100%;
+    }
+  
+    .dropdown-btn {
+      display: block;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      cursor: pointer;
+    }
+  }
+  
+.hidden{
+    display:none;
+}
+.visible{
+    display: block;
+}
